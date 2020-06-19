@@ -1,5 +1,22 @@
-const HomePage: React.FC = () => {
-  return <div>Welcome to my personal website</div>
+import styled from "styled-components";
+
+interface GlobalStyleProps {
+  theme: {
+    main: string;
+    text: string;
+  };
 }
 
-export default HomePage
+const HomePage: React.FC = () => {
+  return (
+    <div className="container">
+      <Title>Jeremy Hon</Title>
+    </div>
+  );
+};
+
+const Title = styled.h1<GlobalStyleProps>`
+  color: ${(props) => props.theme.text};
+`;
+
+export default HomePage;
