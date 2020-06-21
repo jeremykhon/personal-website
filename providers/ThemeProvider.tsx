@@ -1,14 +1,53 @@
-import { useState, createContext, SetStateAction } from "react";
+import { useState, createContext, SetStateAction, useEffect } from "react";
 
+const themeConfig = {
+  light: {
+    "--initial-theme": "light",
+    "--color-bg": "white",
+    "--color-text": "#20242C",
+    "--color-primary": "red",
+    "--color-contrast-low": "white",
+    "--color-white": "white",
+  },
+  dark: {
+    "--initial-theme": "dark",
+    "--color-bg": "#0F151C",
+    "--color-text": "white",
+    "--color-primary": "grey",
+    "--color-contrast-low": "white",
+    "--color-white": "white",
+  },
+};
 interface ThemeContextProps {
   theme: string;
-  setTheme: React.Dispatch<SetStateAction<string>>;
+  setTheme: (value: string) => void;
 }
 
 export const ThemeContext = createContext<Partial<ThemeContextProps>>({});
 
 const ThemeProvider: React.FC = (props) => {
-  const [theme, setTheme] = useState("light");
+  const [theme, rawSetTheme] = useState<string | undefined>(undefined);
+
+  useEffect(() => {
+    const root = window.document.documentElement;
+    const initialColorValue = root.style.getPropertyValue("--initial-theme");
+    rawSetTheme(initialColorValue);
+  }, []);
+
+  const setTheme = (value: string) => {
+    rawSetTheme(value);
+
+    const config = value === "dark" ? themeConfig.dark : themeConfig.light;
+    for (let [key, value] of Object.entries(config)) {
+      setCSSVar(key, value);
+    }
+
+    function setCSSVar(property: string, value: string) {
+      document.documentElement.style.setProperty(property, value);
+    }
+
+    window.localStorage.setItem("theme", value);
+  };
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>

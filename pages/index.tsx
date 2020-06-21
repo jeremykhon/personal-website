@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ProjectList from "../components/ProfilePage/ProjectList";
 
 interface GlobalStyleProps {
   theme: {
@@ -9,14 +10,25 @@ interface GlobalStyleProps {
 
 const HomePage: React.FC = () => {
   return (
-    <div className="container">
-      <Title>Jeremy Hon</Title>
-    </div>
+    <>
+      <Title>Hi, I am Jeremy 👋</Title>
+      <Paragraph>
+        I'm a full-stack software engineer from Hong Kong and currently based in
+        Tokyo, Japan. I've developed features for millions of users who use
+        Wantedly to find their next role.
+      </Paragraph>
+      <ProjectList />
+    </>
   );
 };
 
-const Title = styled.h1<GlobalStyleProps>`
-  color: ${(props) => props.theme.text};
+const Paragraph = styled.p`
+  max-width: 650px;
+`;
+
+const Title = styled.h1`
+  margin-top: 50px;
+  margin-bottom: 25px;
 `;
 
 export default HomePage;
