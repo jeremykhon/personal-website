@@ -48,13 +48,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
   padding: 0.8em;
 }
 
 /* Individual item */
 .bm-item {
-  display: inline-block;
+  color: white !important;
+  display: block;
+  margin-bottom: 20px;
 }
 
 /* Styling of overlay */

@@ -7,6 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const links = {
   linkedin: "https://www.linkedin.com/in/jeremyhon/",
   github: "https://github.com/jehon11",
+  email: "mailto:jeremy@jeremyhon.com",
 };
 
 const Navbar: React.FC = () => {
@@ -30,7 +31,7 @@ const Navbar: React.FC = () => {
     <NavbarRight>
       {windowWidth > 576 ? (
         <>
-          <SocialLink href="mailto:jeremy@jeremyhon.com" target="_blank">
+          <SocialLink href={links.email} target="_blank">
             Contact
           </SocialLink>
           <SocialLink href={links.github} target="_blank">
@@ -42,11 +43,7 @@ const Navbar: React.FC = () => {
           <ThemeToggler />
         </>
       ) : (
-        <GiHamburgerMenu
-          size={25}
-          style={{ cursor: "pointer" }}
-          onClick={toggleSideMenu}
-        />
+        <GiHamburgerMenu size={25} onClick={toggleSideMenu} />
       )}
     </NavbarRight>
   );
@@ -63,10 +60,22 @@ const Navbar: React.FC = () => {
         right
         isOpen={showSideMenu}
         onStateChange={({ isOpen }) => setShowSideMenu(isOpen)}
+        width={220}
       >
-        <a id="home" className="menu-item" href="/">
-          Home
-        </a>
+        <>
+          <div className="bm-item">
+            <ThemeToggler />
+          </div>
+          <SocialLink className="bm-item" href={links.email} target="_blank">
+            Contact
+          </SocialLink>
+          <SocialLink className="bm-item" href={links.github} target="_blank">
+            Github
+          </SocialLink>
+          <SocialLink className="bm-item" href={links.linkedin} target="_blank">
+            Linkedin
+          </SocialLink>
+        </>
       </Menu>
     </>
   );
