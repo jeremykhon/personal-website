@@ -34,18 +34,18 @@
   width: 0;
   pointer-events: none;
 
-  &:checked + .switch__label {
-    background-color: var(--color-primary);
-  }
+  // &:checked + .switch__label {
+  //   background-color: var(--color-primary);
+  // }
 
   &:checked + .switch__label + .switch__marker {
     left: calc(100% - var(--switch-height) + var(--switch-padding));
   }
 
-  &:focus + .switch__label,
-  &:active + .switch__label {
-    box-shadow: 0 0 0 3px var(--color-primary);
-  }
+  // &:focus + .switch__label,
+  // &:active + .switch__label {
+  //   box-shadow: 0 0 0 3px var(--color-primary);
+  // }
 }
 
 .switch__label {
@@ -53,7 +53,7 @@
   height: 100%;
   color: transparent;
   user-select: none;
-  background-color: var(--color-contrast-low);
+  background-color: var(--color-primary);
   border-radius: inherit;
   z-index: 1;
   transition: background var(--switch-animation-duration);
@@ -61,7 +61,7 @@
 
 .switch__marker {
   position: relative;
-  background-color: var(--color-white);
+  background-color: white;
   width: calc(var(--switch-height) - var(--switch-padding) * 2);
   height: calc(var(--switch-height) - var(--switch-padding) * 2);
   border-radius: 50%;

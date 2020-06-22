@@ -4,16 +4,14 @@
       "--initial-theme": "light",
       "--color-bg": "white",
       "--color-text": "#20242C",
-      "--color-primary": "red",
-      "--color-contrast-low": "white",
+      "--color-primary": "#4334FF",
       "--color-white": "white",
     },
     dark: {
       "--initial-theme": "dark",
       "--color-bg": "#0F151C",
       "--color-text": "white",
-      "--color-primary": "grey",
-      "--color-contrast-low": "white",
+      "--color-primary": "#FF0B78",
       "--color-white": "white",
     },
   };

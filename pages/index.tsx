@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import ProjectList from "../components/ProfilePage/ProjectList";
+import Navbar from "../components/Navbar";
 
 interface GlobalStyleProps {
   theme: {
@@ -11,13 +12,16 @@ interface GlobalStyleProps {
 const HomePage: React.FC = () => {
   return (
     <>
-      <Title>Hi, I am Jeremy 👋</Title>
-      <Paragraph>
-        I'm a full-stack software engineer from Hong Kong and currently based in
-        Tokyo, Japan. I've developed features for millions of users who use
-        Wantedly to find their next role.
-      </Paragraph>
-      <ProjectList />
+      <Navbar />
+      <div className="container">
+        <Title>Hi, I'm Jeremy 👋</Title>
+        <Paragraph>
+          I'm a full-stack software engineer from Hong Kong and currently based
+          in Tokyo, Japan. I've developed features for millions of users who use
+          Wantedly to find their next role.
+        </Paragraph>
+        <ProjectList />
+      </div>
     </>
   );
 };
