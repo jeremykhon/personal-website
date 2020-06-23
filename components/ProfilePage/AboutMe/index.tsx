@@ -40,7 +40,6 @@ const EmailLink = styled.a`
   &:hover {
     background-color: var(--color-text);
     color: var(--color-text-invert);
-    text-decoration: none;
   }
 `;
 

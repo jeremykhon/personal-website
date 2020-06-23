@@ -13,3 +13,15 @@ body {
 .container {
   max-width: 992px;
 }
+
+.modal-content {
+  border: none;
+  border-radius: unset;
+}
+
+a {
+  &:hover {
+    text-decoration: unset;
+    color: unset;
+  }
+}

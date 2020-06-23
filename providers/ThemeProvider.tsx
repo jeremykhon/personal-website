@@ -9,6 +9,7 @@ const themeConfig = {
     "--color-primary": "#4334FF",
     "--color-secondary": "#2C0C8E",
     "--color-invert-transp": "rgba(16, 22, 29, 0.05)",
+    "--color-invert-transp2": "rgba(16, 22, 29, 0.1)",
   },
   dark: {
     "--theme": "dark",
@@ -17,7 +18,8 @@ const themeConfig = {
     "--color-text-invert": "#20242C",
     "--color-primary": "#FF0B78",
     "--color-secondary": "#FEE101",
-    "--color-invert-transp": "rgba(255,255,255,0.05)",
+    "--color-invert-transp": "rgba(255,255,255, 0.05)",
+    "--color-invert-transp2": "rgba(255,255,255, 0.1)",
   },
 };
 interface ThemeContextProps {
