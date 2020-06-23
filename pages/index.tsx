@@ -2,13 +2,6 @@ import styled from "styled-components";
 import ProjectList from "../components/ProfilePage/ProjectList";
 import Navbar from "../components/Navbar";
 
-interface GlobalStyleProps {
-  theme: {
-    main: string;
-    text: string;
-  };
-}
-
 const HomePage: React.FC = () => {
   return (
     <>
