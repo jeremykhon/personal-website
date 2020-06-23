@@ -39,7 +39,7 @@ const Projects: React.FC = () => {
     <>
       <ProjectsContainer>
         <Title>
-          Featured Projects<EmojiSpan>🤔</EmojiSpan>
+          Projects<EmojiSpan>🤔</EmojiSpan>
         </Title>
         <Container style={{ padding: 0 }}>
           <Row>

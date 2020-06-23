@@ -16,8 +16,9 @@ const AboutMe: React.FC = () => {
         their next role
       </Paragraph>
       <Paragraph>
-        In the past I worked in finance where I spent 3 years at an investment
-        bank selling derivatives before leaving to follow my passion in tech
+        In the past I worked in finance where I spent 3 years selling
+        derivatives at an investment bank before leaving to follow my passion in
+        tech
       </Paragraph>
       <EmailLink href="mailto:jeremy@jeremyhon.com" target="_blank">
         jeremy@jeremyhon.com
