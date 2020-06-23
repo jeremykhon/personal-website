@@ -18,7 +18,7 @@ const projects = [
     githubUrl: "https://github.com/jehon11/employee_review",
     imgUrl: "/images/projects/360review.jpg",
     description:
-      "A web app that allows employees to submit feedback towards each other’s performance review (React, Rails, Postgres, Heroku)",
+      "A web-app that allows employees to submit feedback towards each other’s performance review (React, Rails, Postgres, Heroku)",
   },
   {
     name: "Slacky",
