@@ -1,20 +1,22 @@
 (function () {
   const themeConfig = {
     light: {
-      "--initial-theme": "light",
+      "--theme": "light",
       "--color-bg": "white",
       "--color-text": "#20242C",
       "--color-text-invert": "white",
       "--color-primary": "#4334FF",
-      "--color-white": "white",
+      "--color-secondary": "#2C0C8E",
+      "--color-invert-transp": "rgba(16, 22, 29, 0.05)",
     },
     dark: {
-      "--initial-theme": "dark",
+      "--theme": "dark",
       "--color-bg": "#0F151C",
       "--color-text": "white",
       "--color-text-invert": "#20242C",
       "--color-primary": "#FF0B78",
-      "--color-white": "white",
+      "--color-secondary": "#FEE101",
+      "--color-invert-transp": "rgba(255,255,255,0.05)",
     },
   };
 
