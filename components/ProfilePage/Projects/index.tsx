@@ -66,12 +66,7 @@ const Projects: React.FC = () => {
                       <ProjectLink href={project.url} target="_blank">
                         Live Site
                       </ProjectLink>
-                      <p>
-                        A restaurant reservation app that delivers discounts for
-                        reserving at non-peak hours, thereby smoothing out
-                        demand and increasing overall business (React, Rails,
-                        Postgres, Heroku)
-                      </p>
+                      <p>{project.description}</p>
                     </ProjectDescriptionContainer>
                   </ModalContent>
                 </Modal>
