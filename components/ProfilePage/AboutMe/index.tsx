@@ -28,8 +28,8 @@ const AboutMe: React.FC = () => {
 };
 
 const AboutMeContainer = styled.div`
-  margin-top: 100px;
-  margin-bottom: 200px;
+  margin-top: 225px;
+  margin-bottom: 225px;
 `;
 
 const EmailLink = styled.a`
