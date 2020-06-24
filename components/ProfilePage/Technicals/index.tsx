@@ -5,7 +5,7 @@ const Technicals: React.FC = () => {
   return (
     <TechnologiesContainer>
       <Title>
-        Technicals<EmojiSpan>💻</EmojiSpan>
+        Things I know<EmojiSpan>💻</EmojiSpan>
       </Title>
       <Subtitle>Languages</Subtitle>
       <div>
