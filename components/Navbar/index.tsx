@@ -50,12 +50,14 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <div className="container">
-        <NavbarContainer>
-          <Logo>Jeremy Hon</Logo>
-          {windowWidth > 0 ? navbarRight() : null}
-        </NavbarContainer>
-      </div>
+      <Nav>
+        <div className="container">
+          <NavbarContainer>
+            <Logo>Jeremy Hon</Logo>
+            {windowWidth > 0 ? navbarRight() : null}
+          </NavbarContainer>
+        </div>
+      </Nav>
       <Menu
         right
         isOpen={showSideMenu}
@@ -101,8 +103,16 @@ const Logo = styled.div`
   font-weight: bold;
 `;
 
+const Nav = styled.div`
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(var(--color-bg) 60%, rgba(255, 255, 255, 0) 100%);
+  z-index: 1000;
+`;
+
 const NavbarContainer = styled.div`
-  padding: 20px 0;
+  padding: 20px 0 50px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
