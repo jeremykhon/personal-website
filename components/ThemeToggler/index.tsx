@@ -7,7 +7,6 @@ const ThemeToggler: React.FC = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   const toggleTheme = (e: ChangeEvent) => {
-    console.log(e.target);
     setTheme && setTheme(theme === "light" ? "dark" : "light");
   };
 
