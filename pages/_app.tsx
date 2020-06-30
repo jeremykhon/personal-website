@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Jeremy Hon - Software Engineer</title>
         <meta
           name="description"
-          content="I'm a full-stack software engineer from Hong Kong currently based in Tokyo, Japan"
+          content="Hi, I'm a full-stack software engineer from Hong Kong currently based in Tokyo, Japan"
         />
       </Head>
       <ThemeProvider>
