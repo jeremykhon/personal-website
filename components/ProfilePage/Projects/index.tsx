@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
           Projects<EmojiSpan>🤔</EmojiSpan>
         </Title>
         <Disclaimer>
-          *The live site may take a few seconds to load initially if it is a
+          *The live site may take a few seconds to load initially if it has to
           cold start
         </Disclaimer>
         <Container style={{ padding: 0 }}>
