@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 const links = {
   linkedin: "https://www.linkedin.com/in/jeremyhon/",
-  github: "https://github.com/jehon11",
+  github: "https://github.com/jeremykhon",
   email: "mailto:jeremy@jeremyhon.com",
 };
 
