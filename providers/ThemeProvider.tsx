@@ -3,9 +3,9 @@ import { useState, createContext, SetStateAction, useEffect } from "react";
 const themeConfig = {
   light: {
     "--theme": "light",
-    "--color-bg": "white",
+    "--color-bg": "#FAF9F6",
     "--color-text": "#20242C",
-    "--color-text-invert": "white",
+    "--color-text-invert": "#FAF9F6",
     "--color-primary": "#4334FF",
     "--color-secondary": "#2C0C8E",
     "--color-invert-transp": "rgba(16, 22, 29, 0.05)",
@@ -14,7 +14,7 @@ const themeConfig = {
   dark: {
     "--theme": "dark",
     "--color-bg": "#0F151C",
-    "--color-text": "white",
+    "--color-text": "#FAF9F6",
     "--color-text-invert": "#20242C",
     "--color-primary": "#FF0B78",
     "--color-secondary": "#FEE101",

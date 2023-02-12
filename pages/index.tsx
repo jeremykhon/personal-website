@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Projects from "../components/ProfilePage/Projects";
 import Navbar from "../components/Navbar";
 import AboutMe from "../components/ProfilePage/AboutMe";
 import Technicals from "../components/ProfilePage/Technicals";
@@ -12,7 +11,6 @@ const HomePage: React.FC = () => {
       <Container>
         <AboutMe />
         <Technicals />
-        <Projects />
       </Container>
     </>
   );

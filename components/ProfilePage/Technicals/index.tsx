@@ -1,6 +1,30 @@
 import styled from "styled-components";
 import { EmojiSpan } from "../../Common/Styled";
 
+const LANGUAGES = [
+  "TypeScript / JavaScript",
+  "Elixir",
+  "Ruby",
+  "Golang",
+  "Python",
+  "Others...",
+];
+
+const TECHNOLOGIES = [
+  "Phoenix",
+  "React",
+  "Apollo / GraphQL",
+  "Docker / Kubernetes / Terraform",
+  "GCP",
+  "Elasticsearch",
+  "Postgres",
+  "AWS",
+  "Node / Express",
+  "Ruby on Rails",
+  "Next.js",
+  "Others...",
+];
+
 const Technicals: React.FC = () => {
   return (
     <TechnologiesContainer>
@@ -9,33 +33,15 @@ const Technicals: React.FC = () => {
       </Title>
       <Subtitle>Languages</Subtitle>
       <div>
-        <Skill>Ruby</Skill>
-        <Skill>JavaScript</Skill>
-        <Skill>TypeScript</Skill>
-        <Skill>HTML</Skill>
-        <Skill>SCSS</Skill>
-        <Skill>SQL</Skill>
-        <Skill>Golang</Skill>
-        <Skill>Python</Skill>
+        {LANGUAGES.map((language) => (
+          <Skill>{language}</Skill>
+        ))}
       </div>
       <Subtitle>Technologies</Subtitle>
       <div>
-        <Skill>Ruby on Rails</Skill>
-        <Skill>Node</Skill>
-        <Skill>Express</Skill>
-        <Skill>React</Skill>
-        <Skill>Redux</Skill>
-        <Skill>Next.js</Skill>
-        <Skill>Postgres</Skill>
-        <Skill>MongoDB</Skill>
-        <Skill>Redis</Skill>
-        <Skill>Docker</Skill>
-        <Skill>GCP - Functions, BigQuery, Pub/Sub</Skill>
-        <Skill>AWS - S3, EB, Lambda, EC2</Skill>
-        <Skill>Heroku</Skill>
-        <Skill>Vercel</Skill>
-        <Skill>Firebase</Skill>
-        <Skill>Git</Skill>
+        {TECHNOLOGIES.map((technology) => (
+          <Skill>{technology}</Skill>
+        ))}
       </div>
     </TechnologiesContainer>
   );
