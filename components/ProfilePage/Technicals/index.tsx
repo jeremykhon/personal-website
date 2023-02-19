@@ -34,13 +34,13 @@ const Technicals: React.FC = () => {
       <Subtitle>Languages</Subtitle>
       <div>
         {LANGUAGES.map((language) => (
-          <Skill>{language}</Skill>
+          <Skill key={language}>{language}</Skill>
         ))}
       </div>
       <Subtitle>Technologies</Subtitle>
       <div>
         {TECHNOLOGIES.map((technology) => (
-          <Skill>{technology}</Skill>
+          <Skill key={technology}>{technology}</Skill>
         ))}
       </div>
     </TechnologiesContainer>
